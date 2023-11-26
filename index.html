@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Finance Manager</h1>
+
+        <div class="input-section">
+            <label for="descriptionInput">Description:</label>
+            <input type="text" id="descriptionInput" placeholder="Enter description">
+            
+            <label for="amountInput">Amount:</label>
+            <input type="number" id="amountInput" placeholder="Enter amount">
+            
+            <label for="categorySelect">Category:</label>
+            <select id="categorySelect">
+                <option value="food">Food</option>
+                <option value="transportation">Transportation</option>
+                <option value="utilities">Utilities</option>
+                <option value="housing">Housing</option>
+                <option value="income">Income</option>
+                <option value="other">Other</option>
+            </select>
+
+            <button id="addTransactionButton">Add Transaction</button>
+        </div>
+
+        <div class="filter-section">
+            <label for="filterCategory">Filter by Category:</label>
+            <select id="filterCategory">
+                <option value="all">All Categories</option>
+                <option value="food">Food</option>
+                <option value="transportation">Transportation</option>
+                <option value="utilities">Utilities</option>
+                <option value="housing">Housing</option>
+                <option value="income">Income</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <ul id="transactionList">
+            <!-- Transactions will be displayed here -->
+        </ul>
+
+        <p id="totalIncomeExpense">Total Income: $0 | Total Expense: $0</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
